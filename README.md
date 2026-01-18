@@ -2,9 +2,9 @@
 
 ### Рисование фигур
 
-matrix_draw N M line x1 y1 x2 y2 [фон] [символ]  
-matrix_draw N M ellipse cx cy rx ry [фон] [символ]  
-matrix_draw N M rect x1 y1 x2 y2 [угол] [фон] [символ]  
+test_task N M line x1 y1 x2 y2 [фон] [символ]  
+test_task N M ellipse cx cy rx ry [фон] [символ]  
+test_task N M rect x1 y1 x2 y2 [угол] [фон] [символ]  
 
 - `N` — количество строк (высота матрицы)  
 - `M` — количество столбцов (ширина матрицы)  
@@ -17,27 +17,25 @@ matrix_draw N M rect x1 y1 x2 y2 [угол] [фон] [символ]
 #### Примеры
 
 - Линия:  
-matrix_draw 20 40 line 1 1 18 38
+test_task 20 40 line 1 1 18 38
 
 - Эллипс:  
-matrix_draw 20 40 ellipse 10 10 5 8 . o
+test_task 20 40 ellipse 10 10 5 8 . o
 
-diff
-Копировать код
 
 - Повернутый прямоугольник:  
 matrix_draw 20 40 rect 5 5 15 12 45 . *
 
 ### Загрузка матрицы из файла
 
-matrix_draw load <путь_к_файлу>
+test_task load <путь_к_файлу>
 
 - Загружает ранее сохранённую матрицу и выводит её в консоль.  
 - Не создаёт новую фигуру, только отображает содержимое файла.  
 
 #### Пример
 
-matrix_draw load matrix.txt
+test_task load matrix.txt
 
 ### Сохранение
 
