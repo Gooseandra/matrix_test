@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Сборка
+Debug/
+Release/
+*.obj
+*.pdb
+*.ilk
+*.log
+
+# CMake / другие временные
+CMakeFiles/
+CMakeCache.txt
+*.tmp
+*.bak
